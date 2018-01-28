@@ -28,7 +28,7 @@ var onFail = function(e) {
 				recorder.stop();
 				recorder.exportWAV(function(s) {
 				console.log(s);
-				
+				postWithAudio(s);
 				//pass jesse the file here
 					//audio.src = window.URL.createObjectURL(s);
 				});

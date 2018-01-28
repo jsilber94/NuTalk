@@ -9,7 +9,7 @@ var play = require('play');
 postWithText();
 // postWithAudio();
 
-function postWithAudio() {
+function postWithAudio(sound) {
     // const data = fs.readFileSync('./audio_16k16bit.pcm');
     // const data = fs.readFileSync('./catIsBlue.wav');
     // const data = fs.readFileSync('./test.wav');
@@ -24,7 +24,7 @@ function postWithAudio() {
             "Accept": "application/xml",
             "Accept-Topic": "Dictation",
         },
-        body: data,
+        body: sound,
     };
 
 
