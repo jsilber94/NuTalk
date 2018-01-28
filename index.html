@@ -15,7 +15,8 @@
     <!-- Custom styles for this template -->
     <link href="css/landing-page.css" rel="stylesheet">
 	<script src="vendor/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="js/recorder.js"> </script>
+	<script  src="js/recorder.js"> </script>
+	<script type="text/javascript" src="js/index.js"> </script>
 
   </head>
 
@@ -49,17 +50,19 @@
                 <div class="col-12 col-md-3">
                   <button type="submit" class="btn btn-block btn-lg btn-primary">Search</button>
                 </div>
-				 <div id="record" class="btn btn-block btn-lg btn-primary">Record</div>
-				
-				 <div id="save" class="btn btn-block btn-lg btn-primary">Save</div>
+				<div class="block">
+				 <div onclick="startRecording()" id="record" class="btn btn-md btn-primary">Record</div>
+				 <div onclick="stopRecording()" id="stop" class="btn  btn-md btn-primary">Stop</div>
+				</div>				 
+				<!-- <audio controls autoplay></audio>-->
               </div>
             </form>
           </div>
         </div>
       </div>
     </header>
-	
-   
+<script>
+			</script>
     <!-- Footer -->
     <footer class="">
 	<div class="container">
